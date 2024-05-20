@@ -2,23 +2,129 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+        private void animacao_Clicked(System.Object sender, System.EventArgs e)
         {
-            count++;
+            try
+            {
+                Navigation.PushAsync(new animacao());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private void acao_Clicked(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new acao());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void aventura_Clicked(System.Object sender, System.EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new aventura());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+
+        private void comedia_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new comedia());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+
+        }
+
+        private void drama_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new drama());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+
+        private void ficcao_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new ficcao());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+
+        private void infantil_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new infantil());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+        private void romance_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new romance());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+
+        private void suspense_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new suspense());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
+        }
+        private void terror_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new terror());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("OPS!!", ex.Message, "OK");
+            }
         }
     }
 
