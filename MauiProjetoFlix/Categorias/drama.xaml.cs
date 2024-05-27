@@ -1,8 +1,8 @@
 namespace MauiProjetoFlix.Categorias;
 
-public partial class NewPage1 : ContentPage
+public partial class drama : ContentPage
 {
-	public NewPage1()
+	public drama()
 	{
 		InitializeComponent();
 	}
